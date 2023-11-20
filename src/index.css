@@ -69,6 +69,6 @@ a {
   line-height: normal;
 }
 
-.active {
+.active, .active:hover {
   text-decoration: underline;
 }

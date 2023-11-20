@@ -3,17 +3,17 @@
 import React, { Component } from "react";
 import Image from './Image/Image.js';
 import Image2 from './Image2/Image2.js';
-import Vinyl from './Vinyl/Vinyl.js';
-import CD from './CD/CD.js';
-import Cassette from './Cassette/Cassette.js';
+import VinylImage from './Vinyl/Vinyl.js';
+import CDImage from './CD/CD.js';
+import CassetteImage from './Cassette/Cassette.js';
 import {
     Route, Routes,
     NavLink,
     HashRouter
 } from "react-router-dom";
-import Home from "./Home";
-import Stuff from "./Stuff";
-import CCI from "./CCI";
+import Vinyl from "./Vinyl";
+import CD from "./CD";
+import Cassette from "./Cassette";
 
 class Main extends Component {
     render() {
@@ -23,21 +23,21 @@ class Main extends Component {
                 <div>
                     <div className="image-container">
                         <div className="item">
-                            <Vinyl />
+                            <VinylImage />
                             <h1>
                                 <NavLink to="/">SHOP VINYL</NavLink>
                             </h1>
                         </div>
                         <div className="item">
-                            <CD />
+                            <CDImage />
                             <h1>
-                                <NavLink to="/Stuff">SHOP CDS</NavLink>
+                                <NavLink to="/CD">SHOP CDS</NavLink>
                             </h1>
                         </div>
                         <div className="item">
-                            <Cassette />
+                            <CassetteImage />
                             <h1>
-                                <NavLink to="/CCI">SHOP CASSETTES</NavLink>
+                                <NavLink to="/Cassette">SHOP CASSETTES</NavLink>
                             </h1>
                         </div>
                     </div>
@@ -46,9 +46,9 @@ class Main extends Component {
                     </footer>
                     <div className="content">
                         <Routes>
-                            <Route path="/" element={<Home />} />
-                            <Route path="/Stuff" element={<Stuff />} />
-                            <Route path="/CCI" element={<CCI />} />
+                            <Route path="/" element={<Vinyl />} />
+                            <Route path="/CD" element={<CD />} />
+                            <Route path="/Cassette" element={<Cassette />} />
                         </Routes>
                     </div>
                 </div>
