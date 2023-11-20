@@ -43,6 +43,8 @@ h1 a, h1 a:visited, h1 a:hover, h1 a:active {
 .content h2 {
   padding: 0;
   margin: 0;
+  font-family: Koulen, sans-serif;
+  font-size: 30px;
 }
 
 .content li {
@@ -67,6 +69,10 @@ a {
   font-style: normal;
   font-weight: bold;
   line-height: normal;
+}
+
+p {
+  font-size: 20px;
 }
 
 .active, .active:hover {
