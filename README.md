@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Project Description
+## Project Description
 
 This project is about redesigning the Discogs website (www.discogs.com) to be more attuned to buying and selling vinyl records, cassette tapes, and CDs.
 
